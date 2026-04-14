@@ -357,6 +357,10 @@ main {
   align-items: center;
 }
 
+.split-layout--showcase {
+  align-items: start;
+}
+
 .split-layout--compact {
   grid-template-columns: minmax(0, 1fr) minmax(300px, 0.7fr);
 }
@@ -423,6 +427,214 @@ main {
 .phone-stack__note {
   color: var(--muted);
   font-size: 0.98rem;
+}
+
+.app-shot {
+  position: relative;
+  display: grid;
+  gap: 18px;
+  justify-items: start;
+}
+
+.app-shot__halo {
+  position: absolute;
+  inset: 7% -12% 2% -10%;
+  border-radius: 42px;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(189, 216, 239, 0.62), transparent 34%),
+    radial-gradient(circle at 78% 62%, rgba(214, 235, 223, 0.58), transparent 38%),
+    radial-gradient(circle at 74% 20%, rgba(240, 221, 200, 0.52), transparent 28%);
+  filter: blur(16px);
+  opacity: 0.95;
+}
+
+.app-shot__device {
+  position: relative;
+  width: min(360px, 100%);
+  padding: 12px;
+  border-radius: 38px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(242, 238, 230, 0.78));
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  box-shadow:
+    0 30px 48px rgba(27, 41, 46, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.72);
+}
+
+.app-shot__screen {
+  position: relative;
+  min-height: 620px;
+  padding: 20px 18px 16px;
+  border-radius: 28px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 8% 8%, rgba(189, 216, 239, 0.78), transparent 26%),
+    radial-gradient(circle at 88% 14%, rgba(240, 221, 200, 0.74), transparent 22%),
+    radial-gradient(circle at 86% 58%, rgba(214, 235, 223, 0.82), transparent 24%),
+    linear-gradient(180deg, #f7f3eb 0%, #f0f5ef 100%);
+}
+
+.app-shot__notch {
+  width: 34%;
+  height: 7px;
+  margin: 2px auto 18px;
+  border-radius: 999px;
+  background: rgba(28, 39, 45, 0.16);
+}
+
+.app-shot__header strong {
+  display: block;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+  font-size: 1.9rem;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.app-shot__header span {
+  display: block;
+  margin-top: 8px;
+  color: rgba(23, 33, 38, 0.66);
+  font-size: 0.88rem;
+}
+
+.app-shot__deck {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.app-shot__stat {
+  padding: 14px 10px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(46, 111, 104, 0.96), rgba(33, 86, 80, 0.98));
+  color: #f4f7f5;
+  text-align: center;
+  box-shadow: 0 14px 24px rgba(31, 57, 54, 0.16);
+}
+
+.app-shot__stat strong {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.app-shot__stat span {
+  display: block;
+  margin-top: 8px;
+  color: rgba(244, 247, 245, 0.84);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+
+.app-shot__cta {
+  margin-top: 14px;
+  padding: 15px 18px;
+  border-radius: 18px;
+  background: rgba(255, 252, 247, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.76);
+  box-shadow: 0 12px 24px rgba(44, 62, 71, 0.08);
+  color: var(--teal-strong);
+  font-weight: 700;
+  text-align: center;
+}
+
+.app-shot__section-label {
+  margin-top: 20px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(23, 33, 38, 0.58);
+}
+
+.app-shot__card {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+  margin-top: 12px;
+  padding: 14px 14px 14px 12px;
+  border-radius: 22px;
+  background: rgba(255, 252, 247, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  box-shadow: 0 16px 30px rgba(36, 51, 58, 0.1);
+}
+
+.app-shot__card--high {
+  box-shadow:
+    inset 3px 0 0 rgba(202, 122, 104, 0.95),
+    0 16px 30px rgba(36, 51, 58, 0.1);
+}
+
+.app-shot__card--medium {
+  box-shadow:
+    inset 3px 0 0 rgba(207, 174, 95, 0.9),
+    0 16px 30px rgba(36, 51, 58, 0.1);
+}
+
+.app-shot__task-mark {
+  width: 18px;
+  height: 18px;
+  margin-top: 6px;
+  border-radius: 999px;
+  border: 2px solid rgba(44, 73, 70, 0.22);
+  background: rgba(255, 252, 247, 0.84);
+}
+
+.app-shot__task-copy {
+  min-width: 0;
+}
+
+.app-shot__task-list {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(241, 245, 240, 0.96);
+  color: rgba(23, 33, 38, 0.66);
+  font-size: 0.74rem;
+}
+
+.app-shot__task-copy strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1.28;
+}
+
+.app-shot__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+  color: rgba(159, 79, 66, 0.94);
+  font-size: 0.76rem;
+}
+
+.app-shot__tabbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 12px 14px;
+  border-radius: 999px;
+  background: rgba(255, 252, 247, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  box-shadow: 0 14px 24px rgba(40, 58, 66, 0.1);
+  color: rgba(23, 33, 38, 0.56);
+  font-size: 0.72rem;
+}
+
+.app-shot__tabbar span.is-active {
+  color: var(--teal-strong);
+  font-weight: 700;
+}
+
+.app-shot__caption {
+  position: relative;
+  color: var(--muted);
+  font-size: 0.96rem;
 }
 
 .detail-list,
@@ -555,6 +767,7 @@ main {
   .hero--app,
   .hero--policy,
   .split-layout,
+  .split-layout--showcase,
   .split-layout--compact,
   .feature-columns,
   .process-grid,
@@ -629,6 +842,10 @@ main {
     right: 0;
     bottom: 4%;
     width: 62%;
+  }
+
+  .app-shot__device {
+    width: min(100%, 360px);
   }
 
   .feature-columns article,
