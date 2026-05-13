@@ -6,18 +6,18 @@
     <title>ADHD Task Hub | Next Step Labs</title>
     <meta
       name="description"
-      content="ADHD Task Hub is a local-first task-management app built to help adults with ADHD organize daily responsibilities with less overwhelm."
+      content="ADHD Task Hub is a local-first Android task planner for adults with ADHD and executive-function friction, now in Google Play closed testing."
     />
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
-    <div class="page-shell">
+    <div class="site-canvas">
       <header class="site-header">
-        <a class="brand" href="../index.html">
+        <a class="brand" href="../index.html" aria-label="Next Step Labs home">
           <span class="brand__mark">NSL</span>
           <span class="brand__text">Next Step Labs</span>
         </a>
-        <nav class="site-nav" aria-label="Primary">
+        <nav class="site-nav" aria-label="Primary navigation">
           <a href="../index.html">Home</a>
           <a href="./adhd-task-hub.html" aria-current="page">ADHD Task Hub</a>
           <a href="../privacy.html">Privacy</a>
@@ -29,56 +29,164 @@
       <main>
         <section class="hero hero--app">
           <div class="hero__copy" data-reveal>
-            <p class="eyebrow">First app from Next Step Labs</p>
-            <h1>ADHD Task Hub</h1>
+            <p class="eyebrow">Android app in Google Play closed testing</p>
+            <h1>A task hub for brains that need the next step to stay visible.</h1>
             <p class="hero__lede">
-              ADHD Task Hub is a local-first task management app for adults with
-              ADHD who want calmer structure, clearer priorities, and a more
-              practical way to manage everyday responsibilities.
+              ADHD Task Hub is a local-first task planner for adults with ADHD
+              or executive-function friction. It is built to make capture,
+              prioritization, and follow-through feel calmer on a real Android
+              phone, including when the keyboard, bottom sheets, and navigation
+              controls all want the same screen space.
             </p>
-            <ul class="badge-row">
-              <li>Task management</li>
-              <li>Offline-first</li>
-              <li>Android-first</li>
+            <ul class="badge-row" aria-label="Product highlights">
+              <li>Closed testing</li>
+              <li>Local-first core</li>
+              <li>No account required</li>
+              <li>Optional Plus</li>
             </ul>
           </div>
-          <div class="hero-aside" data-reveal>
-            <div class="aside-panel">
-              <span class="detail-list__label">Built for</span>
-              <p>Adults who want a calmer, more supportive way to manage tasks, routines, and life admin</p>
-            </div>
-            <div class="aside-panel">
-              <span class="detail-list__label">Approach</span>
-              <p>Local-first product design with practical structure, clear priorities, and low-friction task flows</p>
-            </div>
+          <aside class="release-card" data-reveal aria-label="Current release">
+            <span class="release-card__label">Current closed-test build</span>
+            <strong>1.0.12</strong>
+            <p>
+              Stability and Android polish pass after the first closed-testing
+              feedback round.
+            </p>
+            <dl>
+              <div>
+                <dt>Track</dt>
+                <dd>Google Play closed testing</dd>
+              </div>
+              <div>
+                <dt>Focus</dt>
+                <dd>Crash hardening, keyboard layout, safe areas</dd>
+              </div>
+              <div>
+                <dt>Legal links</dt>
+                <dd>Privacy, Terms, Rate, Share, Version in Settings</dd>
+              </div>
+            </dl>
+          </aside>
+        </section>
+
+        <section class="section section--compact" data-reveal>
+          <div class="section__intro">
+            <p class="eyebrow">Core promise</p>
+            <h2>Less task-manager maintenance. More usable next actions.</h2>
+            <p>
+              The app is not a medical treatment or emergency tool. It is a
+              personal planning aid designed to reduce friction around ordinary
+              tasks, routines, reminders, and life admin.
+            </p>
+          </div>
+          <div class="value-grid value-grid--four">
+            <article>
+              <span class="icon-token">Capture</span>
+              <h3>Quick Add</h3>
+              <p>
+                Add tasks and checklist items quickly, then sort them into the
+                right list when you have the context.
+              </p>
+            </article>
+            <article>
+              <span class="icon-token">Sort</span>
+              <h3>Lists and details</h3>
+              <p>
+                Keep separate life areas, notes, subtasks, due dates,
+                reminders, energy, effort, and optional task photos together.
+              </p>
+            </article>
+            <article>
+              <span class="icon-token">Act</span>
+              <h3>Today and Hotlist</h3>
+              <p>
+                Bring urgent, due, and high-priority work into view without
+                asking users to scan every list.
+              </p>
+            </article>
+            <article>
+              <span class="icon-token">Recover</span>
+              <h3>Templates and Focus Mode</h3>
+              <p>
+                Starter routines and focused sessions help users restart when a
+                task feels vague or too big.
+              </p>
+            </article>
           </div>
         </section>
 
-        <section class="section section--divider" data-reveal>
+        <section class="section product-panel" data-reveal>
           <div class="section__intro">
-            <p class="eyebrow">What the app does</p>
-            <h2>A quieter home base for the next step.</h2>
+            <p class="eyebrow">Closed-test improvements</p>
+            <h2>What changed after tester feedback.</h2>
           </div>
-          <div class="feature-columns feature-columns--wide">
+          <div class="timeline-list timeline-list--cards">
             <article>
-              <h3>Capture and organize</h3>
+              <span>01</span>
+              <h3>First-interaction task creation hardened</h3>
               <p>
-                Create lists, add tasks, notes, and subtasks, and keep your
-                daily responsibilities organized without needing an account.
+                The Quick Add checklist path now has stronger database
+                readiness and list-existence protection so first-use task
+                creation is safer.
               </p>
             </article>
             <article>
-              <h3>Surface what matters</h3>
+              <span>02</span>
+              <h3>Android keyboard behavior improved</h3>
               <p>
-                Today, Hotlist, and Due Today views help important work stand
-                out without turning the entire app into a stress signal.
+                Custom bottom chrome, action docks, and sticky ad areas hide
+                while the keyboard is open, with resize-aware fallback handling
+                for older Android devices.
               </p>
             </article>
             <article>
-              <h3>Support follow-through</h3>
+              <span>03</span>
+              <h3>Bottom sheets respect navigation bars</h3>
               <p>
-                Use reminders, quiet hours, Focus Mode, and templates to move
-                from intention to action with less setup overhead.
+                Icon pickers and add-item sheets now include safe-area padding
+                so controls are not clipped by gesture or 3-button navigation.
+              </p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>Cleaner navigation and actions</h3>
+              <p>
+                Stack screens avoid duplicate header spacing, and list item
+                actions now use a focused action surface instead of expanded
+                inline clutter.
+              </p>
+            </article>
+            <article>
+              <span>05</span>
+              <h3>Settings has public-facing links</h3>
+              <p>
+                Privacy Policy, Terms of Use, Rate App, Share App, and App
+                Version are visible from Settings for tester confidence.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--split" data-reveal>
+          <div class="section__intro">
+            <p class="eyebrow">Plus</p>
+            <h2>Optional support, not a requirement for the basics.</h2>
+          </div>
+          <div class="split-card">
+            <article>
+              <h3>Included core use</h3>
+              <p>
+                Tasks, lists, Today, Hotlist, starter templates, task details,
+                reminders, local backups, and core organization are built for
+                local use without requiring an account.
+              </p>
+            </article>
+            <article>
+              <h3>Plus features</h3>
+              <p>
+                Plus is designed for people who want more help: optional AI Plan
+                Assist, premium themes, recurring tasks, and an ad-free app
+                experience.
               </p>
             </article>
           </div>
@@ -86,96 +194,68 @@
 
         <section class="section" data-reveal>
           <div class="section__intro">
-            <p class="eyebrow">Core features</p>
-            <h2>Designed for practical daily use.</h2>
+            <p class="eyebrow">Privacy shape</p>
+            <h2>Local-first where it matters most.</h2>
           </div>
-          <div class="timeline-list">
-            <div>
-              <h3>Today and Hotlist views</h3>
-              <p>See urgent tasks, due items, and high-priority work across your lists in one place.</p>
-            </div>
-            <div>
-              <h3>List management</h3>
-              <p>Create multiple lists, switch between full and compact views, and reorder tasks to match your workflow.</p>
-            </div>
-            <div>
-              <h3>Templates</h3>
-              <p>Start from reusable routines like Home Reset and Grocery Run, or build custom templates for repeatable tasks.</p>
-            </div>
-            <div>
-              <h3>Task detail controls</h3>
-              <p>Add notes, subtasks, due dates, reminders, recurrence, effort, and energy details in one place.</p>
-            </div>
-            <div>
-              <h3>Optional task photos</h3>
-              <p>Attach a photo to a task by taking one with your camera or choosing one from your photo library when you want visual context.</p>
-            </div>
-            <div>
-              <h3>Local backup and restore</h3>
-              <p>Export your data to a local backup file and restore it later without relying on a backend service.</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section--divider" data-reveal>
-          <div class="section__intro">
-            <p class="eyebrow">Design direction</p>
-            <h2>Calm foundations with room to evolve.</h2>
-          </div>
-          <div class="theme-strip">
-            <div>
-              <span class="theme-strip__name">Calm Warm</span>
-              <p>A soft, low-clutter default designed to feel steady and welcoming.</p>
-            </div>
-            <div>
-              <span class="theme-strip__name">Stitch</span>
-              <p>A more structured visual system with stronger hierarchy and clearer emphasis.</p>
-            </div>
-            <div>
-              <span class="theme-strip__name">Aurora Glass</span>
-              <p>An atmospheric frosted-glass direction with a more expressive visual treatment.</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" data-reveal>
-          <div class="split-layout split-layout--compact">
-            <div class="detail-list">
-              <div>
-                <span class="detail-list__label">Data model</span>
-                <p>Tasks, subtasks, lists, templates, focus sessions, reminders, app settings, and optional task photos stay on-device.</p>
-              </div>
-              <div>
-                <span class="detail-list__label">Privacy</span>
-                <p>Camera and photo-library access are optional and used only when you choose to attach a task photo.</p>
-              </div>
-              <div>
-                <span class="detail-list__label">What it does not require</span>
-                <p>No login, no team accounts, no backend, and no forced cloud sync for core use.</p>
-              </div>
-              <div>
-                <span class="detail-list__label">Release status</span>
-                <p>Currently preparing for internal testing on Google Play.</p>
-              </div>
-            </div>
-            <div class="aside-panel aside-panel--tall">
-              <span class="detail-list__label">Good fit for</span>
+          <div class="detail-grid">
+            <article>
+              <span class="detail-grid__label">On-device by default</span>
               <p>
-                People who want a calmer task manager for home, admin, routines,
-                and next-step planning without the heaviness of a large project tool.
+                Tasks, lists, notes, subtasks, templates, reminders, settings,
+                local backups, and optional task photos are stored on the
+                device for core use.
               </p>
-              <div class="detail-list__actions">
-                <a class="text-link" href="../privacy.html">Privacy Policy</a>
-                <a class="text-link" href="../contact.html">Support details</a>
-              </div>
-            </div>
+            </article>
+            <article>
+              <span class="detail-grid__label">Optional network services</span>
+              <p>
+                Purchases, ads for free users, diagnostics, analytics, app
+                sharing/rating links, and optional AI planning may use external
+                services as described in the Privacy Policy.
+              </p>
+            </article>
+            <article>
+              <span class="detail-grid__label">AI Plan Assist</span>
+              <p>
+                If a user chooses AI help, selected task or planning context may
+                be sent to the Plan Assist backend and AI provider to generate
+                suggestions. Users should review suggestions before acting.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section closing-callout" data-reveal>
+          <p class="eyebrow">For testers</p>
+          <h2>Trying the closed-test build?</h2>
+          <p>
+            Please pay special attention to cold launch, Quick Add checklist
+            creation, typing on input-heavy screens, bottom sheets with Android
+            navigation bars, Settings links, rating, sharing, and displayed
+            version information.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="../contact.html"
+              >Contact support</a
+            >
+            <a class="button button--secondary" href="../privacy.html"
+              >Read Privacy Policy</a
+            >
           </div>
         </section>
       </main>
 
       <footer class="site-footer">
-        <p>Next Step Labs</p>
-        <p>ADHD Task Hub is currently in internal testing.</p>
+        <div>
+          <p class="site-footer__brand">Next Step Labs</p>
+          <p>ADHD Task Hub is currently in Google Play closed testing.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="../index.html">Home</a>
+          <a href="../privacy.html">Privacy</a>
+          <a href="../terms.html">Terms</a>
+          <a href="../contact.html">Contact</a>
+        </nav>
         <p>&copy; <span data-year></span> Next Step Labs</p>
       </footer>
     </div>
