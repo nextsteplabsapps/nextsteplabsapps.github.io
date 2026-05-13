@@ -3,18 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page not found | Next Step Labs</title>
+    <title>Page Not Found | Next Step Labs</title>
+    <meta
+      name="description"
+      content="The requested Next Step Labs page could not be found."
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="page-shell page-shell--centered">
-      <main class="not-found">
+    <div class="site-canvas site-canvas--center">
+      <main class="not-found" data-reveal>
+        <a class="brand brand--center" href="./index.html" aria-label="Next Step Labs home">
+          <span class="brand__mark">NSL</span>
+          <span class="brand__text">Next Step Labs</span>
+        </a>
         <p class="eyebrow">404</p>
-        <h1>That page is not here.</h1>
+        <h1>This page wandered off the list.</h1>
         <p>
-          The page may have moved, or the URL may be incomplete.
+          The link may be old, moved, or mistyped. Head back to the homepage or
+          review ADHD Task Hub, Privacy, Terms, and Contact from there.
         </p>
-        <a class="button button--primary" href="./index.html">Back to home</a>
+        <div class="hero__actions">
+          <a class="button button--primary" href="./index.html">Go home</a>
+          <a class="button button--secondary" href="./contact.html">Contact support</a>
+        </div>
       </main>
     </div>
     <script src="./script.js"></script>
