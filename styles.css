@@ -134,12 +134,14 @@ main {
 
 .hero {
   position: relative;
-  min-height: 760px;
+  min-height: 510px;
   display: grid;
+  grid-template-columns: minmax(0, 0.86fr) minmax(360px, 1.14fr);
+  gap: 46px;
   align-items: center;
   isolation: isolate;
   margin: 8px auto 0;
-  padding: 88px 0 120px;
+  padding: 40px 0 58px;
 }
 
 .hero::before {
@@ -148,7 +150,7 @@ main {
   inset: 0 calc(50% - 50vw);
   z-index: -3;
   background:
-    linear-gradient(112deg, rgba(255, 250, 240, 0.92) 0 38%, rgba(207, 225, 236, 0.78) 38% 62%, rgba(36, 95, 86, 0.18) 62% 100%),
+    linear-gradient(180deg, rgba(255, 250, 240, 0.94) 0%, rgba(243, 239, 228, 0.96) 100%),
     var(--paper);
 }
 
@@ -166,8 +168,10 @@ main {
 .hero__copy {
   position: relative;
   z-index: 2;
+  grid-column: 1;
+  grid-row: 1;
   width: min(520px, 100%);
-  padding-top: 30px;
+  padding-top: 0;
 }
 
 .hero__copy h1,
@@ -184,7 +188,7 @@ main {
 
 .hero__copy h1 {
   max-width: 9ch;
-  font-size: 5.9rem;
+  font-size: 4.15rem;
 }
 
 .hero--product .hero__copy h1 {
@@ -217,9 +221,9 @@ main {
 
 .hero__lede {
   max-width: 30rem;
-  margin: 26px 0 0;
+  margin: 22px 0 0;
   color: var(--ink-soft);
-  font-size: 1.2rem;
+  font-size: 1.08rem;
 }
 
 .hero__actions {
@@ -263,9 +267,12 @@ main {
 }
 
 .hero__visual {
-  position: absolute;
-  inset: 0 calc(50% - 50vw);
-  z-index: -1;
+  position: relative;
+  z-index: 1;
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+  height: 430px;
   overflow: hidden;
   pointer-events: none;
 }
@@ -273,52 +280,52 @@ main {
 .hero__visual::before {
   content: "";
   position: absolute;
-  right: 8vw;
-  top: 74px;
-  width: 540px;
-  height: 540px;
+  right: 22px;
+  top: 24px;
+  width: 74%;
+  height: 76%;
   border: 1px solid rgba(23, 37, 43, 0.16);
   background:
-    linear-gradient(rgba(255, 250, 240, 0.7) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 250, 240, 0.6) 1px, transparent 1px),
-    rgba(36, 95, 86, 0.2);
-  background-size: 34px 34px;
-  transform: rotate(-5deg);
+    linear-gradient(rgba(23, 37, 43, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 37, 43, 0.045) 1px, transparent 1px),
+    rgba(207, 225, 236, 0.64);
+  background-size: 30px 30px;
+  transform: rotate(-3deg);
 }
 
 .hero__screen {
   position: absolute;
-  width: 330px;
-  height: 510px;
+  width: 282px;
+  height: 370px;
   object-fit: cover;
   object-position: top;
   border: 10px solid var(--paper-light);
-  border-radius: 22px;
+  border-radius: 18px;
   box-shadow: var(--shadow);
 }
 
 .hero__screen--today {
-  right: 14vw;
-  top: 118px;
+  right: 46px;
+  top: 40px;
   transform: rotate(5deg);
 }
 
 .hero__screen--plan {
-  right: 33vw;
-  top: 184px;
+  right: 246px;
+  top: 76px;
   transform: rotate(-7deg);
 }
 
 .hero__screen--quick {
-  right: 12vw;
-  top: 116px;
-  transform: rotate(5deg);
+  right: 46px;
+  top: 40px;
+  transform: rotate(4deg);
 }
 
 .hero__screen--focus {
-  right: 34vw;
-  top: 194px;
-  transform: rotate(-6deg);
+  right: 246px;
+  top: 76px;
+  transform: rotate(-5deg);
 }
 
 .hero__note {
@@ -336,16 +343,16 @@ main {
 }
 
 .hero__note--top {
-  right: 25vw;
-  top: 104px;
-  transform: rotate(-3deg);
+  right: 210px;
+  top: 30px;
+  transform: rotate(-2deg);
 }
 
 .hero__note--bottom {
-  right: 9vw;
-  bottom: 130px;
+  right: 24px;
+  bottom: 64px;
   background: var(--mint);
-  transform: rotate(4deg);
+  transform: rotate(3deg);
 }
 
 .section {
@@ -794,26 +801,43 @@ main {
 
 @media (max-width: 1080px) {
   .hero {
-    min-height: 720px;
+    min-height: 500px;
+    grid-template-columns: minmax(0, 0.92fr) minmax(320px, 1.08fr);
+    gap: 28px;
   }
 
   .hero__copy h1 {
-    font-size: 4.8rem;
+    font-size: 3.65rem;
+  }
+
+  .hero__visual {
+    height: 390px;
   }
 
   .hero__screen {
-    width: 286px;
-    height: 456px;
+    width: 236px;
+    height: 320px;
   }
 
   .hero__screen--today,
   .hero__screen--quick {
-    right: 5vw;
+    right: 22px;
+    top: 52px;
   }
 
   .hero__screen--plan,
   .hero__screen--focus {
-    right: 28vw;
+    right: 170px;
+    top: 74px;
+  }
+
+  .hero__note--top {
+    right: 158px;
+  }
+
+  .hero__note--bottom {
+    right: 6px;
+    bottom: 82px;
   }
 
   .section-heading--split,
@@ -859,24 +883,28 @@ main {
   }
 
   .hero {
-    min-height: 620px;
-    padding: 34px 0 190px;
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 34px 0 46px;
     align-items: start;
   }
 
   .hero::before {
     background:
-      linear-gradient(180deg, rgba(255, 250, 240, 0.96) 0 46%, rgba(207, 225, 236, 0.78) 46% 100%),
+      linear-gradient(180deg, rgba(255, 250, 240, 0.96) 0%, rgba(243, 239, 228, 0.98) 100%),
       var(--paper);
   }
 
   .hero__copy {
+    grid-column: 1;
+    grid-row: 1;
     padding-top: 8px;
   }
 
   .hero__copy h1 {
     max-width: 8ch;
-    font-size: 3.7rem;
+    font-size: 3rem;
   }
 
   .hero__lede {
@@ -885,29 +913,35 @@ main {
 
   .hero__visual::before {
     right: auto;
-    left: 22px;
-    top: 410px;
-    width: 420px;
-    height: 280px;
+    left: 8px;
+    top: 8px;
+    width: 92%;
+    height: 220px;
+  }
+
+  .hero__visual {
+    grid-column: 1;
+    grid-row: 2;
+    height: 300px;
   }
 
   .hero__screen {
-    width: 210px;
-    height: 326px;
+    width: 188px;
+    height: 252px;
     border-width: 7px;
     border-radius: 16px;
   }
 
   .hero__screen--today,
   .hero__screen--quick {
-    right: 18px;
-    top: 408px;
+    right: 10px;
+    top: 18px;
   }
 
   .hero__screen--plan,
   .hero__screen--focus {
-    right: 160px;
-    top: 452px;
+    right: 144px;
+    top: 48px;
   }
 
   .hero__note {
@@ -950,12 +984,12 @@ main {
 
 @media (max-width: 460px) {
   .hero {
-    min-height: 600px;
-    padding-bottom: 170px;
+    min-height: auto;
+    padding-bottom: 42px;
   }
 
   .hero__copy h1 {
-    font-size: 3.05rem;
+    font-size: 2.75rem;
   }
 
   .button {
@@ -963,18 +997,20 @@ main {
   }
 
   .hero__screen {
-    width: 184px;
-    height: 292px;
+    width: 178px;
+    height: 242px;
   }
 
   .hero__screen--today,
   .hero__screen--quick {
-    right: -4px;
+    right: -2px;
+    top: 22px;
   }
 
   .hero__screen--plan,
   .hero__screen--focus {
-    right: 118px;
+    right: 116px;
+    top: 50px;
   }
 
   .screen-panel,
