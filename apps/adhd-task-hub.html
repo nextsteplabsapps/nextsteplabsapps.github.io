@@ -6,256 +6,179 @@
     <title>ADHD Task Hub | Next Step Labs</title>
     <meta
       name="description"
-      content="ADHD Task Hub is a local-first Android task planner for adults with ADHD and executive-function friction, now in Google Play closed testing."
+      content="ADHD Task Hub is a local-first Android task-management app built to help adults with ADHD organize daily responsibilities with less overwhelm."
     />
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
-    <div class="site-canvas">
+    <div class="page-shell">
       <header class="site-header">
-        <a class="brand" href="../index.html" aria-label="Next Step Labs home">
-          <span class="brand__mark">NSL</span>
+        <a class="brand" href="../index.html">
+          <span class="brand__mark">
+            <img src="../media/app-icon.png" alt="" />
+          </span>
           <span class="brand__text">Next Step Labs</span>
         </a>
-        <nav class="site-nav" aria-label="Primary navigation">
+        <nav class="site-nav" aria-label="Primary">
           <a href="../index.html">Home</a>
           <a href="./adhd-task-hub.html" aria-current="page">ADHD Task Hub</a>
           <a href="../privacy.html">Privacy</a>
-          <a href="../terms.html">Terms</a>
           <a href="../contact.html">Contact</a>
         </nav>
       </header>
 
       <main>
-        <section class="hero hero--app">
+        <section class="hero hero--product">
+          <div class="hero__visual hero__visual--product" aria-hidden="true">
+            <img
+              class="hero__screen hero__screen--quick"
+              src="../media/adhd-task-hub-phone-02-quick-add.png"
+              alt=""
+            />
+            <img
+              class="hero__screen hero__screen--focus"
+              src="../media/adhd-task-hub-phone-04-focus-mode.png"
+              alt=""
+            />
+            <div class="hero__note hero__note--top">Quick Add</div>
+            <div class="hero__note hero__note--bottom">15-minute focus block</div>
+          </div>
+
           <div class="hero__copy" data-reveal>
-            <p class="eyebrow">Android app in Google Play closed testing</p>
-            <h1>A task hub for brains that need the next step to stay visible.</h1>
+            <h1>ADHD Task Hub</h1>
             <p class="hero__lede">
-              ADHD Task Hub is a local-first task planner for adults with ADHD
-              or executive-function friction. It is built to make capture,
-              prioritization, and follow-through feel calmer on a real Android
-              phone, including when the keyboard, bottom sheets, and navigation
-              controls all want the same screen space.
+              A local-first Android task manager for adults with ADHD who want
+              calmer structure, clearer priorities, and a practical way to move
+              from task capture to follow-through.
             </p>
-            <ul class="badge-row" aria-label="Product highlights">
-              <li>Closed testing</li>
-              <li>Local-first core</li>
-              <li>No account required</li>
-              <li>Optional Plus</li>
-            </ul>
+            <div class="hero__actions">
+              <a class="button button--primary" href="../privacy.html">Privacy summary</a>
+              <a class="button button--secondary" href="../contact.html">Support details</a>
+            </div>
           </div>
-          <aside class="release-card" data-reveal aria-label="Current release">
-            <span class="release-card__label">Current closed-test build</span>
-            <strong>1.0.12</strong>
+        </section>
+
+        <section class="section intro-band" data-reveal>
+          <p class="section-kicker">Current release scope</p>
+          <div class="section-heading section-heading--split">
+            <h2>Built around the next doable step.</h2>
             <p>
-              Stability and Android polish pass after the first closed-testing
-              feedback round.
+              ADHD Task Hub keeps core task data on-device and focuses on the
+              flows people repeat every day: capture, organize, prioritize,
+              focus, repeat, and back up.
             </p>
-            <dl>
-              <div>
-                <dt>Track</dt>
-                <dd>Google Play closed testing</dd>
-              </div>
-              <div>
-                <dt>Focus</dt>
-                <dd>Crash hardening, keyboard layout, safe areas</dd>
-              </div>
-              <div>
-                <dt>Legal links</dt>
-                <dd>Privacy, Terms, Rate, Share, Version in Settings</dd>
-              </div>
-            </dl>
-          </aside>
+          </div>
         </section>
 
-        <section class="section section--compact" data-reveal>
-          <div class="section__intro">
-            <p class="eyebrow">Core promise</p>
-            <h2>Less task-manager maintenance. More usable next actions.</h2>
+        <section class="section feature-stack" data-reveal>
+          <article class="feature-row">
+            <div>
+              <span class="panel-number">01</span>
+              <h3>Today, Hotlist, and Due Today</h3>
+            </div>
             <p>
-              The app is not a medical treatment or emergency tool. It is a
-              personal planning aid designed to reduce friction around ordinary
-              tasks, routines, reminders, and life admin.
+              See urgent, overdue, due-today, and high-priority work across
+              lists without turning the whole app into a stress signal.
             </p>
+          </article>
+          <article class="feature-row">
+            <div>
+              <span class="panel-number">02</span>
+              <h3>Plan and optional AI Plan Assist</h3>
+            </div>
+            <p>
+              Choose a next action, break down work, or plan a short focus block
+              with rule-based recommendations and optional AI help.
+            </p>
+          </article>
+          <article class="feature-row">
+            <div>
+              <span class="panel-number">03</span>
+              <h3>Reminders and recurrence</h3>
+            </div>
+            <p>
+              Add due dates, task reminders, and repeat schedules for daily,
+              weekday, weekly, and monthly routines.
+            </p>
+          </article>
+          <article class="feature-row">
+            <div>
+              <span class="panel-number">04</span>
+              <h3>Focus Mode and local backup</h3>
+            </div>
+            <p>
+              Start a protected focus session, snooze or complete the selected
+              task, and export or restore local data when needed.
+            </p>
+          </article>
+        </section>
+
+        <section class="section image-rhythm" data-reveal>
+          <div class="screen-panel screen-panel--crop">
+            <img src="../media/adhd-task-hub-phone-03-plan.png" alt="ADHD Task Hub Plan screen" />
           </div>
-          <div class="value-grid value-grid--four">
+          <div class="screen-panel screen-panel--large">
+            <img src="../media/adhd-task-hub-phone-01-today.png" alt="ADHD Task Hub Today screen" />
+          </div>
+          <div class="screen-panel screen-panel--crop">
+            <img src="../media/adhd-task-hub-phone-04-focus-mode.png" alt="ADHD Task Hub Focus Mode screen" />
+          </div>
+        </section>
+
+        <section class="section section--ink" data-reveal>
+          <div class="section-heading">
+            <p class="section-kicker">Trust model</p>
+            <h2>Core use does not require an account.</h2>
+          </div>
+          <div class="feature-rail">
             <article>
-              <span class="icon-token">Capture</span>
-              <h3>Quick Add</h3>
+              <h3>Local by default</h3>
               <p>
-                Add tasks and checklist items quickly, then sort them into the
-                right list when you have the context.
+                Tasks, subtasks, lists, focus sessions, reminders, recurrence
+                settings, and backups are stored on the device.
               </p>
             </article>
             <article>
-              <span class="icon-token">Sort</span>
-              <h3>Lists and details</h3>
+              <h3>No forced sync</h3>
               <p>
-                Keep separate life areas, notes, subtasks, due dates,
-                reminders, energy, effort, and optional task photos together.
+                The current release does not include account login, team
+                collaboration, or automatic cloud sync for core task data.
               </p>
             </article>
             <article>
-              <span class="icon-token">Act</span>
-              <h3>Today and Hotlist</h3>
+              <h3>Optional services</h3>
               <p>
-                Bring urgent, due, and high-priority work into view without
-                asking users to scan every list.
-              </p>
-            </article>
-            <article>
-              <span class="icon-token">Recover</span>
-              <h3>Templates and Focus Mode</h3>
-              <p>
-                Starter routines and focused sessions help users restart when a
-                task feels vague or too big.
+                AI Plan Assist, purchases, ads, analytics, and diagnostics use
+                network services only where those features apply.
               </p>
             </article>
           </div>
         </section>
 
-        <section class="section product-panel" data-reveal>
-          <div class="section__intro">
-            <p class="eyebrow">Closed-test improvements</p>
-            <h2>What changed after tester feedback.</h2>
-          </div>
-          <div class="timeline-list timeline-list--cards">
-            <article>
-              <span>01</span>
-              <h3>First-interaction task creation hardened</h3>
+        <section class="section status-band" data-reveal>
+          <div class="detail-list">
+            <div>
+              <span class="detail-list__label">Platform</span>
+              <p>Android-first mobile app built with Expo and React Native.</p>
+            </div>
+            <div>
+              <span class="detail-list__label">Release status</span>
+              <p>Closed testing build preparing for Google Play testing.</p>
+            </div>
+            <div>
+              <span class="detail-list__label">Good fit for</span>
               <p>
-                The Quick Add checklist path now has stronger database
-                readiness and list-existence protection so first-use task
-                creation is safer.
+                People who want a calmer task manager for home, admin,
+                reminders, routines, and next-step planning.
               </p>
-            </article>
-            <article>
-              <span>02</span>
-              <h3>Android keyboard behavior improved</h3>
-              <p>
-                Custom bottom chrome, action docks, and sticky ad areas hide
-                while the keyboard is open, with resize-aware fallback handling
-                for older Android devices.
-              </p>
-            </article>
-            <article>
-              <span>03</span>
-              <h3>Bottom sheets respect navigation bars</h3>
-              <p>
-                Icon pickers and add-item sheets now include safe-area padding
-                so controls are not clipped by gesture or 3-button navigation.
-              </p>
-            </article>
-            <article>
-              <span>04</span>
-              <h3>Cleaner navigation and actions</h3>
-              <p>
-                Stack screens avoid duplicate header spacing, and list item
-                actions now use a focused action surface instead of expanded
-                inline clutter.
-              </p>
-            </article>
-            <article>
-              <span>05</span>
-              <h3>Settings has public-facing links</h3>
-              <p>
-                Privacy Policy, Terms of Use, Rate App, Share App, and App
-                Version are visible from Settings for tester confidence.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section section--split" data-reveal>
-          <div class="section__intro">
-            <p class="eyebrow">Plus</p>
-            <h2>Optional support, not a requirement for the basics.</h2>
-          </div>
-          <div class="split-card">
-            <article>
-              <h3>Included core use</h3>
-              <p>
-                Tasks, lists, Today, Hotlist, starter templates, task details,
-                reminders, local backups, and core organization are built for
-                local use without requiring an account.
-              </p>
-            </article>
-            <article>
-              <h3>Plus features</h3>
-              <p>
-                Plus is designed for people who want more help: optional AI Plan
-                Assist, premium themes, recurring tasks, and an ad-free app
-                experience.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section" data-reveal>
-          <div class="section__intro">
-            <p class="eyebrow">Privacy shape</p>
-            <h2>Local-first where it matters most.</h2>
-          </div>
-          <div class="detail-grid">
-            <article>
-              <span class="detail-grid__label">On-device by default</span>
-              <p>
-                Tasks, lists, notes, subtasks, templates, reminders, settings,
-                local backups, and optional task photos are stored on the
-                device for core use.
-              </p>
-            </article>
-            <article>
-              <span class="detail-grid__label">Optional network services</span>
-              <p>
-                Purchases, ads for free users, diagnostics, analytics, app
-                sharing/rating links, and optional AI planning may use external
-                services as described in the Privacy Policy.
-              </p>
-            </article>
-            <article>
-              <span class="detail-grid__label">AI Plan Assist</span>
-              <p>
-                If a user chooses AI help, selected task or planning context may
-                be sent to the Plan Assist backend and AI provider to generate
-                suggestions. Users should review suggestions before acting.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section closing-callout" data-reveal>
-          <p class="eyebrow">For testers</p>
-          <h2>Trying the closed-test build?</h2>
-          <p>
-            Please pay special attention to cold launch, Quick Add checklist
-            creation, typing on input-heavy screens, bottom sheets with Android
-            navigation bars, Settings links, rating, sharing, and displayed
-            version information.
-          </p>
-          <div class="hero__actions">
-            <a class="button button--primary" href="../contact.html"
-              >Contact support</a
-            >
-            <a class="button button--secondary" href="../privacy.html"
-              >Read Privacy Policy</a
-            >
+            </div>
           </div>
         </section>
       </main>
 
       <footer class="site-footer">
-        <div>
-          <p class="site-footer__brand">Next Step Labs</p>
-          <p>ADHD Task Hub is currently in Google Play closed testing.</p>
-        </div>
-        <nav aria-label="Footer navigation">
-          <a href="../index.html">Home</a>
-          <a href="../privacy.html">Privacy</a>
-          <a href="../terms.html">Terms</a>
-          <a href="../contact.html">Contact</a>
-        </nav>
+        <p>Next Step Labs</p>
+        <p>ADHD Task Hub is in closed testing for Google Play.</p>
         <p>&copy; <span data-year></span> Next Step Labs</p>
       </footer>
     </div>
