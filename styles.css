@@ -328,33 +328,6 @@ main {
   transform: rotate(-5deg);
 }
 
-.hero__note {
-  position: absolute;
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  padding: 0 14px;
-  border: 1px solid var(--line-strong);
-  border-radius: var(--radius);
-  color: var(--ink);
-  background: var(--honey);
-  font-weight: 900;
-  box-shadow: var(--shadow-light);
-}
-
-.hero__note--top {
-  right: 210px;
-  top: 30px;
-  transform: rotate(-2deg);
-}
-
-.hero__note--bottom {
-  right: 24px;
-  bottom: 64px;
-  background: var(--mint);
-  transform: rotate(3deg);
-}
-
 .section {
   position: relative;
   padding: 86px 0;
@@ -831,15 +804,6 @@ main {
     top: 74px;
   }
 
-  .hero__note--top {
-    right: 158px;
-  }
-
-  .hero__note--bottom {
-    right: 6px;
-    bottom: 82px;
-  }
-
   .section-heading--split,
   .showcase-grid,
   .app-spotlight,
@@ -942,10 +906,6 @@ main {
   .hero__screen--focus {
     right: 144px;
     top: 48px;
-  }
-
-  .hero__note {
-    display: none;
   }
 
   .section {
